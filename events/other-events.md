@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Satellite Events
+title: OSCAR Related Events
 meeting: true
 ---
 
@@ -13,13 +13,13 @@ For a full list of SFB-TRR 195 meetings and activities, see their [event calenda
 
 ---
 
-{% assign events = site.data.events | where: "satellite", "Yes" | group-by: "start-date" | sort: "end-date" | reverse %}
+{% assign events = site.data.events | where: "other", "Yes" | group-by: "start-date" | sort: "end-date" | reverse %}
 
 <ul>
   {% for event in events %}
     <li>
       <strong>{{ event.title }}</strong><br>
-      <em>{{ event.start-date }} – {{ event.end-date }}</em><br>
+      <em>{{ event.start-date | date: site.full_date_format }} – {{ event.end-date | date: site.full_date_format }}</em><br>
       Location: {{ event.location }}<br>
       {% if event.website %}
         <a href="{{ event.website | replace: "https://www.oscar-system.org", site.baseurl }}" target="_blank">More information</a>

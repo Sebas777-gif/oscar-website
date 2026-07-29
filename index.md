@@ -11,18 +11,7 @@ Welcome to **OSCAR**, an innovative **Open Source Computer Algebra Research** sy
 
 Discover more about our project and vision on our [About]({{site.baseurl}}/about) page.
 
-<div style="background: #f4f4f4;
-  border: 2px solid #aaa;
-  padding: 1em 1.2em;
-  margin: 1.5em 0;
-  font-size: 0.95em;
-  line-height: 1.5;">
-  <strong>In memoriam:</strong>
-  Hans Schönemann passed away on December 28, 2025.
-  A founding member of the OSCAR team and a central contributor to
-  Singular, Hans was a respected expert in computer algebra
-  and a valued colleague and friend. He will be deeply missed.
-</div>
+Questions about OSCAR, stuck on an example, or missing features (e.g., from GAP, Polymake, or Singular)? Join our [Slack channel]({{site.baseurl}}/contact-and-support/#slack) — beginners and first-time users are very welcome.
 
 ---
 
@@ -31,14 +20,14 @@ Discover more about our project and vision on our [About]({{site.baseurl}}/about
 {% assign sorted_conferences = site.data.events | group-by: "start-date" | sort: "end-date" %}
 {% assign today = "now" | date: "%Y-%m-%d" %}
 {% assign upcoming_conferences = sorted_conferences | where_exp: "event", "event['end-date'] >= today" %}
-{% assign max_events = site.data.config.number_of_displayed_events_on_index_page %}
+{% assign max_events = site.number_of_displayed_events_on_index_page %}
 
 {% if upcoming_conferences.size > 0 %}
   {% for event in upcoming_conferences limit:max_events %}
     {% if event.website %}
-  * [{{ event.title }} ({{ event.location }}, {{ event.start-date | date: "%d %b %Y" }} to {{ event.end-date | date: "%d %b %Y" }})]({{ event.website | replace: "https://www.oscar-system.org", site.baseurl }})
+  * [{{ event.title }} ({{ event.location }}, {{ event.start-date | date: site.full_date_format }} to {{ event.end-date | date: site.full_date_format }})]({{ event.website | replace: "https://www.oscar-system.org", site.baseurl }})
     {% else %}
-  * {{ event.title }} ({{ event.location }}, {{ event.start-date | date: "%d %b %Y" }} to {{ event.end-date | date: "%d %b %Y" }})
+  * {{ event.title }} ({{ event.location }}, {{ event.start-date | date: site.full_date_format }} to {{ event.end-date | date: site.full_date_format }})
     {% endif %}
   {% endfor %}
   {% if upcoming_conferences.size > max_events %}
@@ -52,7 +41,7 @@ More upcoming events are available [here]({{ site.baseurl }}/events/).
 
 ## 🚀 Get OSCAR {{ site.data.release.version }}
 
-_Released on {{ site.data.release.date | date_to_string }}_ -- [View release notes.](https://github.com/oscar-system/Oscar.jl/releases/tag/v{{ site.data.release.version }})
+_Released on {{ site.data.release.date | date: site.full_date_format }}_ -- [View release notes.](https://github.com/oscar-system/Oscar.jl/releases/tag/v{{ site.data.release.version }})
 
 - Getting started is easy - [follow our installation guide here!]({{site.baseurl }}/install/)
 - Already using OSCAR? [Click here to upgrade to the latest version.]({{ site.baseurl }}/upgrade/)
@@ -64,6 +53,14 @@ _Released on {{ site.data.release.date | date_to_string }}_ -- [View release not
 - [Hands-on Tutorials]({{site.baseurl }}/tutorials/).
 - [Comprehensive Documentation]({{site.baseurl }}/documentation/).
 - [Frequently Asked Questions (FAQ)](https://docs.oscar-system.org/stable/General/faq/).
+
+---
+
+## 🎬 Videos
+
+The OSCAR Video Channel features interviews with contributors and demonstrations of OSCAR's capabilities.
+
+📺 **Visit the [OSCAR Video Channel](https://tube.mathe.social/a/oscar/videos).**
 
 ---
 

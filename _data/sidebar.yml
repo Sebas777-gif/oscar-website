@@ -8,12 +8,14 @@
   submenu:
     - title: "OSCAR"
       url: "/events/meetings/"
-    - title: "Satellite"
-      url: "/events/satellite-events/"
+    - title: "Related"
+      url: "/events/other-events/"
 
 # SPACER
 - spacer: true
 
+- title: "Try Online"
+  url: "/try-online/"
 - title: "Installation"
   url: "/install/"
 - title: "Upgrade"

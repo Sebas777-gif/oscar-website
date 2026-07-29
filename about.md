@@ -168,9 +168,11 @@ algebraic solving.
 
 🛠️ **[Upgrade Instructions]({{ site.baseurl }}/upgrade/)** – Already using OSCAR? Learn how to upgrade to version {{ site.data.release.version }}.
 
-🎓 **[Tutorials]({{site.baseurl}}/tutorials/)** – Interactive [Jupyter notebooks](https://nbviewer.jupyter.org/) to help you get started.
+🎓 **[Tutorials]({{site.baseurl}}/tutorials/)** – Interactive [Jupyter notebooks](https://jupyter.org/) to help you get started.
 
 📚 **[Documentation]({{site.baseurl}}/documentation/)** – In-depth documentation and examples.
+
+🎬 **[OSCAR Video Channel](https://tube.mathe.social/a/oscar/videos)** – interviews with contributors and demonstrations of OSCAR's capabilities.
 
 📙 **[OSCAR Book](http://book.oscar-system.org)** – A detailed guide to OSCAR 1.0, featuring code snippets and in-depth explanations.
 
