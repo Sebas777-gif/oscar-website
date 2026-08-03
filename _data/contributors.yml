@@ -75,6 +75,7 @@
   website: https://martinbies.github.io
   status: active
   repos:
+  - Nemocas/AbstractAlgebra.jl
   - Nemocas/Nemo.jl
   - oscar-system/Oscar.jl
 - name: Tobias Boege
@@ -235,6 +236,7 @@
   website: https://jeis4wpi.github.io/
   status: active
   repos:
+  - Nemocas/AbstractAlgebra.jl
   - oscar-system/Oscar.jl
 - name: Raul Epure
   affiliation: University of Kaiserslautern-Landau
@@ -514,6 +516,14 @@
   status: active
   repos:
   - oscar-system/Oscar.jl
+  - thofma/Hecke.jl
+- name: Gaurish Korpal
+  affiliation: University of Auckland, New Zealand
+  email: gkorpal@zohomail.in
+  github: gkorpal
+  website: https://gkorpal.github.io/
+  status: active
+  repos:
   - thofma/Hecke.jl
 - name: Kevin Kuehn
   affiliation: TU Berlin
